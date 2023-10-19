@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\dev\opengllessons\include\glfw\glfw-3.3.8\include;D:\dev\opengllessons\include\glad\include;D:\dev\opengllessons\include\glew\include;D:\dev\opengllessons\include\glm;D:\dev\opengllessons\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\dev\opengllessons\include;D:\dev\opengllessons\include\glfw\glfw-3.3.8\include;D:\dev\opengllessons\include\glew\include;D:\dev\opengllessons\include\glm;$(IncludePath)</IncludePath>
     <LibraryPath>D:\dev\opengllessons\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -132,10 +132,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\Downloads\glad (1)\src\glad.c" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="resource_manager.cpp" />
     <ClCompile Include="shader.cpp" />
+    <ClCompile Include="sprite_renderer.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +145,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="shader.h" />
+    <ClInclude Include="sprite_renderer.h" />
     <ClInclude Include="texture.h" />
   </ItemGroup>
   <ItemGroup>

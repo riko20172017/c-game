@@ -6,6 +6,7 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
+#define STB_IMAGE_IMPLEMENTATION
 #include "resource_manager.h"
 #include <iostream>
 #include <sstream>
@@ -106,6 +107,7 @@ Texture2D ResourceManager::loadTextureFromFile(const char* file, bool alpha)
     int width, height, nrChannels;
     unsigned char* data = stbi_load(file, &width, &height, &nrChannels, 0);
     // now generate texture
+    std::cout << data;
     texture.Generate(width, height, data);
     // and finally free image data
     stbi_image_free(data);
