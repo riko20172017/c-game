@@ -6,6 +6,7 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
+#define STB_IMAGE_IMPLEMENTATION
 #include "resource_manager.h"
 #include <iostream>
 #include <sstream>
